@@ -12,7 +12,7 @@ gradle.projectsLoaded {
     }
 }
 //自定义include
-ext.includeWithApi = { String moduleName ->
+ext.includeApi = { String moduleName ->
     include(moduleName)
     String originDir = project(moduleName).projectDir
     String targetDir = "${originDir}-api"
